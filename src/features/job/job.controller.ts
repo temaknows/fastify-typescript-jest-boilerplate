@@ -10,7 +10,6 @@ export const getJobs: RouteHandler<{
   return [
     {
       date: new Date(2022, 9, 3),
-      name: 'Artem',
     },
   ];
 };

@@ -1,5 +1,6 @@
 import routes from '@/routes';
 import { NODE_ENV } from '@core/config';
+import cors from '@fastify/cors';
 import fastify from 'fastify';
 
 function bootstrap() {
@@ -18,9 +19,7 @@ function bootstrap() {
     },
   });
 
-  server.get('/a', () => {
-    return 'hello asfd122323423';
-  });
+  server.register(cors, {});
 
   server.get('/ping', async () => {
     return 'pong\n';
