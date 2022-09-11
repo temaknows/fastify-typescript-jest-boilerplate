@@ -68,7 +68,7 @@ test:cov
 
 ## Author
 
-(https://github.com/temaknows) [@temaknows]
+[@temaknows](https://github.com/temaknows)
 
 ## License
 
