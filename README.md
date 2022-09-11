@@ -8,7 +8,7 @@ A boilerplate for Node.js Fastify apps with TypeScript and Jest.
 
 ```sh
 # clone repo
-   git clone  https://github.com/temaknows/fastify-typescript-jest-boilerplate
+git clone  https://github.com/temaknows/fastify-typescript-jest-boilerplate
 ```
 
 Or generate a new repo on GitHub [click here](https://github.com/temaknows/fastify-typescript-jest-boilerplate/generate).
