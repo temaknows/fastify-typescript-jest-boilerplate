@@ -1,4 +1,4 @@
-import { BaseError } from '@/core/errors';
+import { NotFoundErrorType } from '@/core/errors';
 import bootstrapServer from '@/server';
 import { FastifyInstance } from 'fastify';
 
@@ -39,9 +39,9 @@ describe('Job', () => {
       query: { hasError: 'true' },
     });
 
-    const body: BaseError<string> = JSON.parse(response.body);
+    const body: NotFoundErrorType = JSON.parse(response.body);
 
     expect(response.statusCode).toBe(404);
-    expect(body.message).toBe('oops!?');
+    expect(body.message).toBe('oops!? Not Found');
   });
 });

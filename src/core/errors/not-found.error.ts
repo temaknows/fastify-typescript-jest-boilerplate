@@ -1,7 +1,5 @@
-import { BaseError } from './base-error';
+import createError from '@fastify/error';
 
-export class NotFoundError<T> extends BaseError<T> {
-  constructor(msg = 'not found', body?: T | null) {
-    super(msg, 404, body);
-  }
-}
+export const NotFoundError = createError('NOT_FOUND', '%s Not Found', 404);
+
+export type NotFoundErrorType = ReturnType<typeof NotFoundError>;
